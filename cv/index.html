@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliz Habiboullah - CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+            --card-background: #ffffff;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 40px;
+        }
+        
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-background);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+        
+        main {
+            padding: 40px;
+        }
+        
+        .section {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 15px;
+            font-size: 1.3em;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .company {
+            font-style: italic;
+            color: var(--secondary-color);
+        }
+        
+        .date {
+            color: var(--accent-color);
+            font-size: 0.9em;
+        }
+        
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "▹";
+            color: var(--secondary-color);
+            position: absolute;
+            left: -20px;
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-item {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            
+            header {
+                padding: 30px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>ELIZ HABIBOULLAH</h1>
+            <div class="contact-info">
+                <a href="http://www.eliz.pages.dev">www.eliz.pages.dev</a>
+                <a href="mailto:eliz.habiboullah@gmail.com">eliz.habiboullah@gmail.com</a>
+            </div>
+        </header>
+        
+        <main>
+            <div class="section">
+                <h2>EDUCATION</h2>
+                <p>
+                    <span class="job-title">Bachelor of Computer Science (Hons)</span><br>
+                    <span class="company">City University, Malaysia</span><br>
+                    <span class="date">2021 - 2024</span>
+                </p>
+                <p>Specialisation in Software Engineering, courses include:</p>
+                <ul>
+                    <li>Software Development, Algorithm and Complexity, Data Structures, DevOps, Usability Engineering, Modelling Simulation, Artificial Intelligence, Cloud Foundation</li>
+                </ul>
+                <p>Projects include:</p>
+                <ul>
+                    <li>Amazon Price Tracker: Developed a Python web app with BeautifulSoup for Amazon price monitoring, integrated Twilio API for price drop alerts, and used MongoDB for storing historical prices and user preferences.</li>
+                    <li>Chatbot Customer Support using Python & NLP: Integrated NLP-powered chatbot for customer inquiries, implemented sentiment analysis for feedback and response enhancement.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>EXPERIENCE</h2>
+                <p>
+                    <span class="job-title">Software Engineer intern</span><br>
+                    <span class="company">Gridicity Ltd</span><br>
+                    <span class="date">2023-2024</span>
+                </p>
+                <ul>
+                    <li>Worked with both C and Python to develop and test software modules.</li>
+                    <li>Collaborated with the team on debugging, code reviews, and resolving issues.</li>
+                    <li>Gained practical experience in various stages of the software development process.</li>
+                </ul>
+
+                <p>
+                    <span class="job-title">Creative Consultant</span><br>
+                    <span class="company">Hylus Labs</span><br>
+                    <span class="date">2021 - 2023</span>
+                </p>
+                <ul>
+                    <li>Developed and executed innovative strategies, enhancing brand visibility and engagement.</li>
+                    <li>Created compelling content and managed campaigns to drive customer acquisition.</li>
+                    <li>Leveraged data insights to optimize marketing efforts and achieve growth.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>TRAINING</h2>
+                <p>
+                    <span class="job-title">Machine Learning with Python</span><br>
+                    <span class="company">freeCodeCamp</span><br>
+                    <span class="date">2024</span>
+                </p>
+                <ul>
+                    <li>Developed practical machine learning skills with TensorFlow, covering neural networks, NLP, and reinforcement learning.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>SKILLS</h2>
+                <h3>Technical</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">TensorFlow</span>
+                    <span class="skill-item">scikit-learn</span>
+                    <span class="skill-item">C</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">MongoDB</span>
+                    <span class="skill-item">Access</span>
+                    <span class="skill-item">Docker</span>
+                    <span class="skill-item">Azure</span>
+                    <span class="skill-item">Power BI</span>
+                </div>
+                <h3>Professional</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Design Thinking</span>
+                    <span class="skill-item">Problem-solving</span>
+                    <span class="skill-item">Competitive Analysis</span>
+                    <span class="skill-item">Team collaboration</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>LANGUAGES</h2>
+                <ul>
+                    <li>English (fluent)</li>
+                    <li>French (fluent)</li>
+                    <li>Arabic (native)</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
